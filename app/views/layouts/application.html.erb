@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concurso Cultural</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'jumbotron-narrow', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'ie10-viewport-bug-workaround', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'ie10-viewport-bug-workaround', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'ie-emulation-modes-warning', 'data-turbolinks-track' => true %>
+	  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <!-- <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>
+          </ul>
+        </nav> -->
+
+         <nav>
+          <ul class="nav nav-pills col-centered">
+            <h3 class="text-muted"><%= image_tag 'Groupe_Renault_Logo.svg.png', class: "logo" %></h3>
+          </ul>
+        </nav>
+        
+      </div>
+
+      <div class="jumbotron">
+        <h1>Concurso Cultural - RdB</h1>
+        <p class="lead">Dê sua sugestão de nome para o Evento da TI e concorra a um jantar para 2 na churrascaria Batel Gril</p>
+        
+      </div>
+
+      <div class="row marketing">
+        <%= yield %>        
+      </div>
+
+      <footer class="footer">
+        <p>© 2016 Renault do Brasil, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+</body>
+</html>
